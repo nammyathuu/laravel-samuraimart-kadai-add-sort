@@ -10,8 +10,6 @@ class Product extends Model
 {
     use HasFactory, Sortable;
 
-    public $sortable = ['created_at'];
-
     public function category()
     {
         return $this->belongsTo(Category::class);
